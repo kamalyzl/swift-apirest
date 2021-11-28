@@ -17,6 +17,7 @@
 		BA4CB8612752EE4400F146F9 /* BuscarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4CB8602752EE4400F146F9 /* BuscarViewController.swift */; };
 		BA4CB8642752F7D400F146F9 /* NoticiaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4CB8632752F7D400F146F9 /* NoticiaResponse.swift */; };
 		BA9C94F5275354F800850A9F /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C94F4275354F800850A9F /* ArticleTableViewCell.swift */; };
+		BA9C950C2753711000850A9F /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C950B2753711000850A9F /* DetalleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BA4CB8602752EE4400F146F9 /* BuscarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarViewController.swift; sourceTree = "<group>"; };
 		BA4CB8632752F7D400F146F9 /* NoticiaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaResponse.swift; sourceTree = "<group>"; };
 		BA9C94F4275354F800850A9F /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		BA9C950B2753711000850A9F /* DetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				BA4CB8602752EE4400F146F9 /* BuscarViewController.swift */,
 				BA4CB8632752F7D400F146F9 /* NoticiaResponse.swift */,
 				BA9C94F4275354F800850A9F /* ArticleTableViewCell.swift */,
+				BA9C950B2753711000850A9F /* DetalleViewController.swift */,
 			);
 			path = buscar;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9C950C2753711000850A9F /* DetalleViewController.swift in Sources */,
 				BA4CB8612752EE4400F146F9 /* BuscarViewController.swift in Sources */,
 				BA4CB8352752E40F00F146F9 /* ViewController.swift in Sources */,
 				BA4CB8312752E40F00F146F9 /* AppDelegate.swift in Sources */,

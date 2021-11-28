@@ -40,7 +40,9 @@ class BuscarViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemArticle", for: indexPath) as! ArticleTableViewCell
+        
         let itemArticle = articlesList[indexPath.row]
+        
         cell.tituloLabel.text = String(format: "%@ %@", "Titulo: ", itemArticle.title)
         cell.autorLabel.text = String(format: "%@ %@", "Autor: ", itemArticle.author ?? "")
         cell.fechaLabel.text = String(format: "%@ %@", "Fecha: ", itemArticle.published_date)
@@ -48,9 +50,11 @@ class BuscarViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     }
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let itemArticle =  articlesList[indexPath.row]
-        print(itemArticle.title)
-        // aqui debemos abrir la nueva pantalla
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let articleDetail = storyboard.instantiateViewController(withIdentifier: "DetalleViewController") as! DetalleViewController
+        articleDetail.article = articlesList[indexPath.row]
+        self.navigationController?.pushViewController(articleDetail, animated: true)
+        
     }
  
      
